@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kelompok Meraki">
+    <title>Document</title>
+</head>
+<style>
+    div.kotakrendang{
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+
+    }
+    
+    div.kotakrendang input.reseprendang  {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    div.kotakrendang input.belirendang {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #555;
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    img.gbrrendang{
+        width: 100%;
+        height: auto;
+    }
+    
+    img.gbrrendang:hover{
+        backdrop-filter: blur(10px);
+        filter: blur(4px);
+        transition: 0.3s ease;
+    }
+    input.reseprendang{
+        display: none;
+
+    }
+
+    input.belirendang{
+        display: none;
+    }
+
+    img.gbrrendang:hover + .reseprendang, .reseprendang:hover {
+        display: inline-block;
+    }
+    img.gbrrendang:hover + .belirendang, .belirendang:hover{
+        display: inline-block;
+    }
+</style>
+<body>
+    <h1>Meraki</h1><hr>
+    <div class="container">
+        <div class="kotakrendang">
+            <img class="gbrrendang" src="rendang.jpg">
+            <input class="reseprendang" type="button" value="Lihat Resep">
+            <input class="belirendang" type="button" value="Beli Rendang">
+            <p>Rendang</p>
+        </div>
+        <div>
+            <img src="nasigoreng.jpeg">
+            <input class="" type="button">
+            <input class="" type="button">
+        </div>
+        <div>
+            <img src="capcay.jpg">
+            <input type="button">
+            <input class="" type="button">
+        </div>
+        <div>
+            <img src="udang.jpg">
+            <input type="button">
+            <input class="" type="button">
+        </div>
+    </div>
+</body>
+</html>
