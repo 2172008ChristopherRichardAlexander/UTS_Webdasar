@@ -57,24 +57,57 @@ body {
 }
 
 .B1 {
-    width: 80%;
-    padding: 10px;
-    border-radius: 20px;
-    background: none;
-    margin: 0 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    left: 40%;
 }
-.B1:hover::after {
-    left: 0;
-}
-.B1::after{
-    content: "";
-    z-index: -1;
-    border-radius: 20px;
-    left: 100%;
+
+.B1 span {
     position: absolute;
-    width: 100%;
+    width: 25%;
     height: 100%;
-    background-color: #38ada9;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.B1:hover {
+    color: black;
+}
+.B1:hover span {
+    transform: translateX(0)scale(2);
+}
+.BTN1 {
+    width: 800px;
+    height: 70px;
+    border: solid rgb(255, 255, 255);
+    background-color: rgba(178, 190, 195,0.8);
+    margin: 0 auto;
+}
+
+.M1 {
+    background-color: pink;
 }
