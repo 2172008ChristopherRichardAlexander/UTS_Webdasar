@@ -7,37 +7,39 @@
     <title>Document</title>
 </head>
 <style>
-    #at{
-        margin-top: 50px;
+    #fom{
+        margin-top: 75px;
     }
     body{
-        background-color: whitesmoke;
+        background-image: url("bga.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    #fom{
-        position: absolute;
-        border: 1px solid #ddd;
-        display: inline-block;
-        padding: 2em;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top: 100px;
-        margin-bottom:auto;
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-
+    #goog{
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.637);
+        width: 350px;
+        height: 500px;
+        margin: auto;
     }
 
     #order, #kurir{
         width: 170px;
     }
     #but{
-        border: 1px solid ;
-        margin-left: 120px;
+        background-color: whitesmoke;
+        border: ridge;
+        width: 60px;
+        height: 25px;
+        
+        margin-left: 140px;
+        border-radius: 5px;
+    }
+    #but:hover{
+        background-color: tomato;
     }
     input, select{
-        background-color: whitesmoke;
+        background-color:rgba(0, 0, 0, 0) ;
         border: none;
         border-bottom: 1px solid black;
         color: #333;
@@ -47,58 +49,64 @@
     }
     #order{
         width: 190px;
+        
     }
+    
 </style>
 <body>
-    <div id="at">
-        <h1>MERAKI</h1>
-    </div>
     <div id="fom" >
-        <table align="center">
-            <tr>
-                <td>Nama :</td>
-            </tr>
-            <tr>
-                <td><input type="text" name="nam" id="nam"></td>
-            </tr>
-            <tr>
-                <td>Alamat :</td>
-            </tr>
-            <tr>
-                <td><input type="text" name="al" id="al"></td>
-            </tr>
-            <tr>
-                <td>No telepon :</td>
-            </tr>
-            <tr>
-                <td><input type="text" name="tlp" id="tlp"></td>
-            </tr>
-            <tr>
-                <td>Order :</td>
-            </tr>
-            <tr>
-                <td><select id="order">
-                    <option value="1">1. Rendang</option>
-                    <option value="2">2. Nasi Goreng</option>
-                    <option value="3">3. Capcay</option>
-                    <option value="4">4. Udang Asam Manis Gurih</option>
-                  </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Kurir :</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="kur" value="1" checked>1. Go-Jek<br>
-                    <input type="radio" name="kur" value="2">2. Grab<br>
-                    <input type="radio" name="kur" value="3">3. Uber<br>
-                    <input type="radio" name="kur" value="4">4. SiCepat<br>
-                </td>
-            </tr>
-            <tr>
-                <td><br><button type="submit" id="but">Order</button></td>
-            </tr>
-        </table>
+        <div id="goog">
+            <table align="center" id="tl">
+                <br>
+                <tr>
+                    <td>Nama :</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nam" id="nam"></td>
+                </tr>
+                <tr>
+                    <td>Alamat :</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="al" id="al"></td>
+                </tr>
+                <tr>
+                    <td>No telepon :</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="tlp" id="tlp"></td>
+                </tr>
+                <tr>
+                    <td>Order :</td>
+                </tr>
+                <tr>
+                    <td><select id="order">
+                        <option value="1">1. Rendang</option>
+                        <option value="2">2. Nasi Goreng</option>
+                        <option value="3">3. Soto Bandung</option>
+                        <option value="4">4. Lotek</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kurir :</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="kur" value="1" checked> Go-Jek<br>
+                        <input type="radio" name="kur" value="2"> Grab<br>
+                        <input type="radio" name="kur" value="3"> Uber<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><button type="submit" id="but">Order</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="at">
+        <br><br>
+        <hr>
+        <h1><marquee>&copy; MERAKI</marquee></h1>
     </div>
 </body>
 </html>
