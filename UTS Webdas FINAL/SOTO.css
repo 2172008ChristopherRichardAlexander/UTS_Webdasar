@@ -2,7 +2,9 @@ body {
     background-image: url(st2.jpg);
 }
 
-.h1 { text-align: center;}
+.h1 { text-align: center;
+    color: #ffffb5;
+}
 .P1 { 
     position: absolute;
     left: 50%;
