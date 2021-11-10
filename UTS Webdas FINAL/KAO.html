@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+P+One&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&display=swap');
+            </style>
 </head>
 <style>
     #fom{
@@ -17,7 +23,7 @@
     }
     #goog{
         border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.637);
+        background-color: rgba(90, 31, 62, 0.637);
         width: 350px;
         height: 500px;
         margin: auto;
@@ -29,11 +35,12 @@
     #but{
         background-color: whitesmoke;
         border: ridge;
-        width: 60px;
-        height: 25px;
+        width: 100px;
+        height: 50px;
         
         margin-left: 140px;
-        border-radius: 5px;
+        border-radius: 20px;
+        font-family: 'Mochiy Pop P One', sans-serif;
     }
     #but:hover{
         background-color: tomato;
@@ -51,6 +58,10 @@
         width: 190px;
         
     }
+    .TD {
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(254, 245, 213);
+    }
     
 </style>
 <body>
@@ -59,46 +70,46 @@
             <table align="center" id="tl">
                 <br>
                 <tr>
-                    <td>Nama :</td>
+                    <td class="TD">Nama :</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="nam" id="nam"></td>
                 </tr>
                 <tr>
-                    <td>Alamat :</td>
+                    <td class="TD">Alamat :</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="al" id="al"></td>
                 </tr>
                 <tr>
-                    <td>No telepon :</td>
+                    <td class="TD">No telepon :</td>
                 </tr>
                 <tr>
                     <td><input type="text" name="tlp" id="tlp"></td>
                 </tr>
                 <tr>
-                    <td>Order :</td>
+                    <td class="TD">Order :</td>
                 </tr>
                 <tr>
                     <td><select id="order">
-                        <option value="1">1. Rendang</option>
-                        <option value="2">2. Nasi Goreng</option>
-                        <option value="3">3. Soto Bandung</option>
-                        <option value="4">4. Lotek</option>
+                        <option value="1" class="TD">1. Rendang</option>
+                        <option value="2" class="TD">2. Nasi Goreng</option>
+                        <option value="3" class="TD">3. Soto Bandung</option>
+                        <option value="4" class="TD">4. Lotek</option>
                     </select>
                     </td>
                 </tr>
                 <tr>
-                    <td>Kurir :</td>
+                    <td class="TD">Kurir :</td>
                 </tr>
                 <tr>
-                    <td><input type="radio" name="kur" value="1" checked> Go-Jek<br>
+                    <td class="TD"><input type="radio" name="kur" value="1" checked> Go-Jek<br>
                         <input type="radio" name="kur" value="2"> Grab<br>
                         <input type="radio" name="kur" value="3"> Uber<br>
                     </td>
                 </tr>
                 <tr>
-                    <td><br><button type="submit" id="but">Order</button></td>
+                    <td><br><button type="submit" id="but" class="BTN">Order</button></td>
                 </tr>
             </table>
         </div>
