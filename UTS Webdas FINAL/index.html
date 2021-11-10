@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Kelompok Meraki">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+P+One&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+P+One&display=swap');
+            </style>
 </head>
 <style>
     @import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap);
@@ -25,6 +31,7 @@
         text-align: center;
         padding-top: 10px;
         color: #ffffb5;
+        font-family: 'Mochiy Pop P One', sans-serif;
     }
     .footer{
         background-color: gray;
@@ -66,7 +73,9 @@
         margin-left: 150px;
         width: 150px;
         height: 50px;
-        border-radius: 25px; 
+        border-radius: 25px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     input.belirendang{
@@ -76,7 +85,8 @@
         width: 150px;
         height: 50px;
         border-radius: 25px;
-        
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     img.gbrrendang:hover + div.btnrendang, div.btnrendang:hover {
@@ -92,12 +102,12 @@
     }
 
     input.belirendang:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
         cursor: pointer;
     }
     input.reseprendang:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
         cursor: pointer;
     }
@@ -132,6 +142,9 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
+        
     }
 
     input.belinasgor{
@@ -142,6 +155,8 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     img.gbrnasgor:hover + div.btnnasgor, div.btnnasgor:hover {
@@ -156,11 +171,11 @@
         left: 5%;
     }
     input.belinasgor:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     input.resepnasgor:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     div.btnnasgor p{
@@ -195,6 +210,8 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     input.belicapcay{
@@ -205,6 +222,8 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     img.gbrcapcay:hover + div.btncapcay, div.btncapcay:hover {
@@ -219,11 +238,11 @@
         left: 5%;
     }
     input.belicapcay:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     input.resepcapcay:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     div.btncapcay p{
@@ -258,6 +277,8 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     input.beliudg{
@@ -268,6 +289,8 @@
         height: 50px;
         border-radius: 25px;
         cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(240, 233, 207);
     }
 
     img.gbrudg:hover + div.btnudg, div.btnudg:hover {
@@ -282,16 +305,23 @@
         left: 5%;
     }
     input.beliudg:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     input.resepudg:hover{
-        background-color: aqua;
+        background-color: rgb(80, 61, 55);
         transition: 1s;
     }
     div.btnudg p{
         text-align: center;
         font-size: xx-large;
+    }
+    .T {
+        font-family: 'Mochiy Pop P One', sans-serif;
+        border: 2px;
+        background-color: rgb(229, 223, 200,0.8);
+        font-size: 1em;
+        color: #012755;
     }
 
 </style>
@@ -303,7 +333,7 @@
         <div class="kotakrendang">
             <img class="gbrrendang" src="rendanga.jpg">
             <div class="btnrendang">
-                <p>Rendang</p>
+                <p class="T">Rendang</p>
                 <input class="reseprendang" type="button" value="Lihat Resep" onclick="location.href='RENDANG.html';">
                 <input class="belirendang" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
             </div>
@@ -311,7 +341,7 @@
         <div class="kotaknasgor">
             <img class="gbrnasgor" src="nasigoreng.jpg">
             <div class="btnnasgor">
-                <p>Nasi Goreng</p>
+                <p class="T">Nasi Goreng</p>
                 <input class="resepnasgor" type="button" value="Lihat Resep" onclick="location.href='NASGOR.html';">
                 <input class="belinasgor" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
             </div>
@@ -319,7 +349,7 @@
         <div class="kotakcapcay">
             <img class="gbrcapcay" src="lotek.jpg">
             <div class="btncapcay">
-                <p>Lotek</p>
+                <p class="T">Lotek</p>
                 <input class="resepcapcay" type="button" value="Lihat Resep" onclick="location.href='LOTEK.html';">
                 <input class="belicapcay" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
             </div>
@@ -327,22 +357,11 @@
         <div class="kotakudg">
             <img class="gbrudg" src="Soto.jpg">
             <div class="btnudg">
-                <p>Soto Bandung</p>
+                <p class="T">Soto Bandung</p>
                 <input class="beliudg" type="button" value="Lihat Resep" onclick="location.href='SOTO BANDUNG.html';">
                 <input class="resepudg" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="footer">
             <marquee>&copy; MERAKI</marquee>
         </div>
