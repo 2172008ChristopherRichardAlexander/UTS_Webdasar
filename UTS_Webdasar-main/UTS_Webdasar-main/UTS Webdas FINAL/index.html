@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kelompok Meraki">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+P+One&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Caveat:wght@600&family=Fruktur&family=Indie+Flower&family=Mochiy+Pop+P+One&display=swap');
+            </style>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap);
+    body{
+        background-image: url(background.jpg);
+        font-family: 'Lora', serif;
+    }
+    .navbar{
+        background-color: grey;
+        margin-top: -25px;
+        width: 101%;
+        margin-left: -10px;
+        margin-right: -10px;
+        height: 60px;
+        margin-bottom: 40px;
+    }
+    h1{
+        text-align: center;
+        padding-top: 10px;
+        color: #ffffb5;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    .footer{
+        background-color: gray;
+        position: fixed;
+        margin-top: 700px;
+        width: 101%;
+        margin-left: -10px;
+        height: 40px;
+
+    }
+    marquee{
+        padding-top: 10px;
+    }
+    .container{
+        height: 950px;
+    }
+    /* =============================================================== */
+    div.kotakrendang{
+        position: relative;
+        float:left;
+        margin-left: 100px;
+    }
+    
+    img.gbrrendang{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnrendang:hover ,img.gbrrendang{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.reseprendang{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    input.belirendang{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    img.gbrrendang:hover + div.btnrendang, div.btnrendang:hover {
+        display:inline-block;
+    }
+    .btnrendang{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    input.belirendang:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        cursor: pointer;
+        color:  white;
+    }
+    input.reseprendang:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        cursor: pointer;
+        color:  white;
+    }
+    div.btnrendang p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    /* =============================================================== */
+    div.kotaknasgor{
+        position: relative;
+        float: left;
+        margin-left: 980px;
+    }
+    
+    img.gbrnasgor{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnnasgor:hover ,img.gbrnasgor{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepnasgor{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+        
+    }
+
+    input.belinasgor{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    img.gbrnasgor:hover + div.btnnasgor, div.btnnasgor:hover {
+        display:inline-block;
+    }
+    .btnnasgor{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.belinasgor:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color: white;
+    }
+    input.resepnasgor:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color:  white;
+    }
+    div.btnnasgor p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    /* =============================================================== */
+    div.kotakcapcay{
+        position: relative;
+        float:left;
+        margin-top: 500px;
+        margin-left: 100px;
+    }
+    
+    img.gbrcapcay{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btncapcay:hover ,img.gbrcapcay{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepcapcay{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    input.belicapcay{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    img.gbrcapcay:hover + div.btncapcay, div.btncapcay:hover {
+        display:inline-block;
+    }
+    .btncapcay{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.belicapcay:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color:  white;
+    }
+    input.resepcapcay:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color:  white;
+    }
+    div.btncapcay p{
+        text-align: center;
+        font-size: xx-large;
+    }
+/* =============================================================== */
+    div.kotakudg{
+        position: relative;
+        float:left;
+        margin-top: 500px;
+        margin-left: 880px;
+    }
+    
+    img.gbrudg{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnudg:hover ,img.gbrudg{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepudg{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 200px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    input.beliudg{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 120px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+        color: rgb(80, 61, 55);
+    }
+
+    img.gbrudg:hover + div.btnudg, div.btnudg:hover {
+        display:inline-block;
+    }
+    .btnudg{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.beliudg:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color:  white;
+    }
+    input.resepudg:hover{
+        background-color: rgb(80, 61, 55);
+        transition: 1s;
+        color:  white;
+    }
+    div.btnudg p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .T {
+        font-family: 'Mochiy Pop P One', sans-serif;
+        border: 2px;
+        background-color: rgb(229, 223, 200,0.8);
+        font-size: 1em;
+        color: #012755;
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <h1>Meraki</h1>
+    </div>
+    <div class="container">
+        <div class="kotakrendang">
+            <img class="gbrrendang" src="rendanga.jpg">
+            <div class="btnrendang">
+                <p class="T">Rendang</p>
+                <input class="reseprendang" type="button" value="Lihat Resep" onclick="location.href='RENDANG.html';">
+                <input class="belirendang" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
+            </div>
+        </div>
+        <div class="kotaknasgor">
+            <img class="gbrnasgor" src="nasigoreng.jpg">
+            <div class="btnnasgor">
+                <p class="T">Nasi Goreng</p>
+                <input class="resepnasgor" type="button" value="Lihat Resep" onclick="location.href='NASGOR.html';">
+                <input class="belinasgor" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
+            </div>
+        </div>
+        <div class="kotakcapcay">
+            <img class="gbrcapcay" src="lotek.jpg">
+            <div class="btncapcay">
+                <p class="T">Lotek</p>
+                <input class="resepcapcay" type="button" value="Lihat Resep" onclick="location.href='LOTEK.html';">
+                <input class="belicapcay" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
+            </div>
+        </div>
+        <div class="kotakudg">
+            <img class="gbrudg" src="Soto.jpg">
+            <div class="btnudg">
+                <p class="T">Soto Bandung</p>
+                <input class="beliudg" type="button" value="Lihat Resep" onclick="location.href='SOTO BANDUNG.html';">
+                <input class="resepudg" type="button" value="Beli Makanan" onclick="location.href='KAO.html';">
+            </div>
+        </div>
+        <div class="footer">
+            <marquee>&copy; MERAKI</marquee>
+        </div>
+    </div>
+</body>
+</html>

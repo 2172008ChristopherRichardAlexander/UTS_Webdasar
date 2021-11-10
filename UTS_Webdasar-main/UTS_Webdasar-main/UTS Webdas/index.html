@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kelompok Meraki">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        background-color: rgb(248, 248, 248);
+    }
+
+    /* =============================================================== */
+    div.kotakrendang{
+        position: relative;
+        float:left;
+        margin-left: 100px;
+    }
+    
+    img.gbrrendang{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnrendang:hover ,img.gbrrendang{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.reseprendang{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px; 
+    }
+
+    input.belirendang{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        
+    }
+
+    img.gbrrendang:hover + div.btnrendang, div.btnrendang:hover {
+        display:inline-block;
+    }
+    .btnrendang{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    input.belirendang:hover{
+        background-color: aqua;
+        transition: 1s;
+        cursor: pointer;
+    }
+    input.reseprendang:hover{
+        background-color: aqua;
+        transition: 1s;
+        cursor: pointer;
+    }
+    div.btnrendang p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    /* =============================================================== */
+    div.kotaknasgor{
+        position: relative;
+        float: left;
+        margin-left: 900px;
+    }
+    
+    img.gbrnasgor{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnnasgor:hover ,img.gbrnasgor{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepnasgor{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    input.belinasgor{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    img.gbrnasgor:hover + div.btnnasgor, div.btnnasgor:hover {
+        display:inline-block;
+    }
+    .btnnasgor{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.belinasgor:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    input.resepnasgor:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    div.btnnasgor p{
+        text-align: center;
+        font-size: xx-large;
+    }
+    /* =============================================================== */
+    div.kotakcapcay{
+        position: relative;
+        float:left;
+        margin-top: 500px;
+        margin-left: 100px;
+    }
+    
+    img.gbrcapcay{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btncapcay:hover ,img.gbrcapcay{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepcapcay{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    input.belicapcay{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    img.gbrcapcay:hover + div.btncapcay, div.btncapcay:hover {
+        display:inline-block;
+    }
+    .btncapcay{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.belicapcay:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    input.resepcapcay:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    div.btncapcay p{
+        text-align: center;
+        font-size: xx-large;
+    }
+/* =============================================================== */
+    div.kotakudg{
+        position: relative;
+        float:left;
+        margin-top: 500px;
+        margin-left: 800px;
+    }
+    
+    img.gbrudg{
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    
+    div.btnudg:hover ,img.gbrudg{
+        backdrop-filter: blur(10px);
+        transition: 0.3;
+    }
+    input.resepudg{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 150px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    input.beliudg{
+        display: inline-block;
+        margin-top: 80px;
+        margin-left: 100px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    img.gbrudg:hover + div.btnudg, div.btnudg:hover {
+        display:inline-block;
+    }
+    .btnudg{
+        display: none;
+        width: 700px;
+        height: 390px;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    input.beliudg:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    input.resepudg:hover{
+        background-color: aqua;
+        transition: 1s;
+    }
+    div.btnudg p{
+        text-align: center;
+        font-size: xx-large;
+    }
+
+</style>
+<body>
+    <h1>Meraki</h1><hr>
+    <div class="container">
+        <div class="kotakrendang">
+            <img class="gbrrendang" src="rendang.jpg">
+            <div class="btnrendang">
+                <p>Rendang</p>
+                <input class="reseprendang" type="button" value="Lihat Resep">
+                <input class="belirendang" type="button" value="Beli Makanan">
+            </div>
+        </div>
+        <div class="kotaknasgor">
+            <img class="gbrnasgor" src="nasigoreng.jpg">
+            <div class="btnnasgor">
+                <p>Nasi Goreng</p>
+                <input class="resepnasgor" type="button" value="Lihat Resep">
+                <input class="belinasgor" type="button" value="Beli Makanan">
+            </div>
+        </div>
+        <div class="kotakcapcay">
+            <img class="gbrcapcay" src="capcay.jpg">
+            <div class="btncapcay">
+                <p>Capcay</p>
+                <input class="resepcapcay" type="button" value="Lihat Resep">
+                <input class="belicapcay" type="button" value="Beli Makanan">
+            </div>
+        </div>
+        <div class="kotakudg">
+            <img class="gbrudg" src="udang.jpg">
+            <div class="btnudg">
+                <p>Udang Asam Manis</p>
+                <input class="beliudg" type="button" value="Lihat Resep">
+                <input class="resepudg" type="button" value="Beli Makanan">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
